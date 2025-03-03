@@ -77,9 +77,9 @@ class User:
             i.email = en.decrypt(i.email)
     
     def __load_user(self):
-        self.recv.append(user_information('reconnection', 'gAAAAABnwrtdsvyxXmdQpl7c8q4fG0-EE9CVZoLaiOtTR72ahahi8JEbRLDWr2grw_N0kh0CnryT7WHBttvx--dzX-OZQfj1AQWSkCAhm12cDw6xN3R7l5o='))
-        self.recv.append(user_information('turbulence', 'gAAAAABnwrtdsvyxXmdQpl7c8q4fG0-EE9CVZoLaiOtTR72ahahi8JEbRLDWr2grw_N0kh0CnryT7WHBttvx--dzX-OZQfj1AQWSkCAhm12cDw6xN3R7l5o='))
-        self.recv.append(user_information('shock', 'gAAAAABnwrtdsvyxXmdQpl7c8q4fG0-EE9CVZoLaiOtTR72ahahi8JEbRLDWr2grw_N0kh0CnryT7WHBttvx--dzX-OZQfj1AQWSkCAhm12cDw6xN3R7l5o='))
+        self.recv.append(user_information('reconnection', 'gAAAAABnxUm04H_d8pq0LcBkIdb3llrRXbGNLkbWO0l83YHvjP0P69bK7l-y7R2vrdrazzSdgw8PU9gSbTM3c8l43KUPm3nFSRkoPc5HjAGdCTueK7B_lSA='))
+        self.recv.append(user_information('turbulence', 'gAAAAABnxUm04H_d8pq0LcBkIdb3llrRXbGNLkbWO0l83YHvjP0P69bK7l-y7R2vrdrazzSdgw8PU9gSbTM3c8l43KUPm3nFSRkoPc5HjAGdCTueK7B_lSA='))
+        self.recv.append(user_information('shock', 'gAAAAABnxUm04H_d8pq0LcBkIdb3llrRXbGNLkbWO0l83YHvjP0P69bK7l-y7R2vrdrazzSdgw8PU9gSbTM3c8l43KUPm3nFSRkoPc5HjAGdCTueK7B_lSA='))
 
 # ========================================================================= #
 #
