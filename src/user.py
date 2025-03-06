@@ -116,8 +116,9 @@ class ChatAI:
 # @info: written by Liangjin Song on 2025-02-28 at Nanchang University
 #
 class Message:
-    def __init__(self, usr: user_information, date: str, fromer: str, articles: list):
+    def __init__(self, usr: user_information, date: str, fromer: str, articles: list, previous: str):
         self.date = date
+        self.previous = previous
         self.keywords = usr.keywords
         self.msg = MIMEMultipart()
         self.msg['From'] = fromer
@@ -174,10 +175,10 @@ class Message:
     def __body(self, articles: list) -> str:
         body = ''
         if not articles:
-            title = f'您好，根据关键词{self.keywords}，没有检索到{self.date}的文章！'
+            title = f'您好，根据关键词{self.keywords}，没有检索到{self.date}和{self.previous}的文章！'
             body = title
         else:
-            title = f'您好，根据关键词{self.keywords}，检索到{self.date}的文章如下：'
+            title = f'您好，根据关键词{self.keywords}，检索到{self.date}和{self.previous}的文章如下：'
             body = f"""
             {title}
             <br>
@@ -207,9 +208,9 @@ class Sender:
     def quit(self):
         self.stmp.quit()
     
-    def send(self, user: user_information, date: str, articles: list):
+    def send(self, user: user_information, date: str, articles: list, previous: str):
         fromer = formataddr(('Space Research: ' + user.keywords, self.sender))
-        msg = Message(user, date, fromer, articles).msg
+        msg = Message(user, date, fromer, articles, previous).msg
         try:
             self.stmp.sendmail(self.sender, user.email, msg.as_string())
         except smtplib.SMTPException as e:
