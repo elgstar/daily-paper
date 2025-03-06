@@ -4,6 +4,7 @@
 #
 import os, hashlib, smtplib, time, base64
 from cryptography.fernet import Fernet
+from email.utils import formataddr
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from openai import OpenAI
@@ -207,7 +208,7 @@ class Sender:
         self.stmp.quit()
     
     def send(self, user: user_information, date: str, articles: list):
-        fromer = 'Space Research: ' + user.keywords + ' <' + self.sender + '>'
+        fromer = formataddr(('Space Research: ' + user.keywords, self.sender))
         msg = Message(user, date, fromer, articles).msg
         try:
             self.stmp.sendmail(self.sender, user.email, msg.as_string())
