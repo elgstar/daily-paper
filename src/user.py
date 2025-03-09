@@ -81,6 +81,9 @@ class User:
         self.recv.append(user_information('reconnection', 'gAAAAABnxU5T7_BMttRvgKeSY_Z5QhBF8YaKpb3XSjaAgmCnl4y-63r3g0LdMSbzTeKy22y95oHUq0JIROePqdcS3abbmsiKC4DTwrAAERTWjOXlOvrHlGw='))
         self.recv.append(user_information('turbulence', 'gAAAAABnxU5T7_BMttRvgKeSY_Z5QhBF8YaKpb3XSjaAgmCnl4y-63r3g0LdMSbzTeKy22y95oHUq0JIROePqdcS3abbmsiKC4DTwrAAERTWjOXlOvrHlGw='))
         self.recv.append(user_information('shock', 'gAAAAABnxU5T7_BMttRvgKeSY_Z5QhBF8YaKpb3XSjaAgmCnl4y-63r3g0LdMSbzTeKy22y95oHUq0JIROePqdcS3abbmsiKC4DTwrAAERTWjOXlOvrHlGw='))
+        self.recv.append(user_information('reconnection', 'gAAAAABnzPtM69te53tXwTK6VxtAwmbUWqhrvY0TC_kwHqz8ZCEfvVa-7iDieFrj5kwthHIfJNJKe1cC4aSWCFPj80Vh2AS-aDwxFqlWOBBgFm5pQxdorhc='))
+        self.recv.append(user_information('turbulence', 'gAAAAABnzPtM69te53tXwTK6VxtAwmbUWqhrvY0TC_kwHqz8ZCEfvVa-7iDieFrj5kwthHIfJNJKe1cC4aSWCFPj80Vh2AS-aDwxFqlWOBBgFm5pQxdorhc='))
+        self.recv.append(user_information('shock', 'gAAAAABnzPtM69te53tXwTK6VxtAwmbUWqhrvY0TC_kwHqz8ZCEfvVa-7iDieFrj5kwthHIfJNJKe1cC4aSWCFPj80Vh2AS-aDwxFqlWOBBgFm5pQxdorhc='))
 
 # ========================================================================= #
 #
