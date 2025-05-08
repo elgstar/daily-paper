@@ -26,7 +26,7 @@ def main():
     previous = target_date(2)
     col = collecter.Collecter()
     usr = user.User().recv
-    ai = user.ChatAI()
+    #  ai = user.ChatAI()
     for u in usr:
         id1 = col.filter(date, u.keywords, ai)
         id2 = col.filter(previous, u.keywords, ai)
