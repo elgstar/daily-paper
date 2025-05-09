@@ -677,7 +677,7 @@ class Collecter:
                         self.articles[i].abstract = "需要转到论文原文查看摘要！"
                         self.articles[i].aisum = "没有阅读到摘要，无法生成总结！"
                     else:
-                        self.articles[i].aisum = ai.chat(art.abstract)
-                        #  self.articles[i].aisum = "AI罢工"
+                        #  self.articles[i].aisum = ai.chat(art.abstract)
+                        self.articles[i].aisum = "AI罢工了!"
                 index.append(i)
         return index
